@@ -1,0 +1,13 @@
+.top-bar{
+    background-color: grey;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    display: block;
+
+}
+.top-bar h1{
+    width: max-content;
+    justify-content: right;
+    
+}
