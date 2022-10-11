@@ -1,0 +1,29 @@
+.content{
+    width: 100%;
+    padding: 15px;
+}
+
+
+.card-content{
+    width: 100%;
+}
+
+.card-body{
+    width: 100%;
+    border: green 5px solid;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding: 18px 0px 10px 10px;
+    justify-content: space-around
+}
+.info-col{
+    width:70%;
+    justify-content: right;
+    font-size: 28px;
+}
+.icon-col{
+    width: 20%;
+    text-align: right;
+    border: orange solid 4px;
+}

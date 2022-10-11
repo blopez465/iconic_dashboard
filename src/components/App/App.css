@@ -1,0 +1,8 @@
+.content-father{
+    width: 100%;
+    display: block;
+}
+.content-row{
+    display: flex;
+    flex-wrap: flex;
+}

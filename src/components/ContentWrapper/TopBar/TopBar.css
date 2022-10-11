@@ -1,0 +1,17 @@
+.top-bar{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: flex;
+    
+    width: 100vw;
+
+}
+.dasboard-title {
+    width: max-content;
+    margin-left: 20px;
+    margin-right: 60px;
+    font-family:'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+}
