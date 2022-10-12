@@ -2,6 +2,8 @@
 import './App.css';
 import TopBar from '../ContentWrapper/TopBar/TopBar'
 import Content from '../ContentWrapper/Content/Content'
+import LastProduct from '../ContentWrapper/LastProduct/LastProduct';
+import Categories from '../ContentWrapper/Categories/Categories';
 function App() {
 
 
@@ -35,12 +37,17 @@ function App() {
           <Content/> */}
 
           {
-            info.map(item=>{
-             return  <Content title={item.title} count={item.count} icon={item.icon} />
+            info.map((item,i)=>{
+             return  <Content title={item.title} count={item.count} icon={item.icon} key={i}/>
             })
           }
          </div>
-
+        <div className='last-product'>
+          <LastProduct/>
+        </div>
+        <div className='categories-count'>
+          <Categories/>
+        </div>
           
     </div>
   );

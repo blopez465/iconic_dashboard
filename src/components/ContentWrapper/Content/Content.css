@@ -10,12 +10,13 @@
 
 .card-body{
     width: 100%;
-    border: green 5px solid;
     display: flex;
     flex-wrap: wrap;
     min-height: 100px;
     padding: 18px 0px 10px 10px;
-    justify-content: space-around
+    justify-content: space-around;
+    border: solid 3px rgb(174, 171, 171);
+    border-radius: 5px;
 }
 .info-col{
     width:70%;
@@ -25,5 +26,13 @@
 .icon-col{
     width: 20%;
     text-align: right;
-    border: orange solid 4px;
+}
+.fa-flag{
+    color: #3569d8
+}
+.fa-users{
+    color:#4c1d85
+}
+.fa-heart{
+    color:#d83535
 }
