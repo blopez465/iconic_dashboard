@@ -19,18 +19,24 @@ class Categories extends Component {
        
     }
     componentDidMount() {
-      //  let categoriesList = []
+        let categoriesArray = []
+  
         fetch('http://localhost:3001/products/api/products')
             .then(result => {
                 return result.json()
             })
             .then(categories => {
+                categoriesArray= Object.entries(categories.countByCategory)
                 this.setState({
-                    categoriesList: categories.countByCategory
+                   categoriesList:categoriesArray
                 })
-                //  this.setState({categoriesList : [...categories.countByCategory]})
-                //categoriesList.push(categories)
-                // console.log(typeof(categories.countByCategory))
+               
+               
+             
+                // console.log(categories.countByCategory)
+                
+                // console.log(countList)
+
             })
             .catch(error => {
                 console.log(error)
@@ -49,25 +55,13 @@ class Categories extends Component {
                     <h1>Categorías en la base de datos</h1>
                 </div>
                 <div className="row">
-                {/* {
+                {
                     this.state.categoriesList.map((category, index) => {
-                        return  <CategoriesCard name={'test'} count={1} />
+                        return  <CategoriesCard name={category[0]} count={category[1]} key={index} />
                     })
                         
-                } */}
-             {/* {
-               this.keys.forEach(element => {
-                return <CategoriesCard name={element} count={this.state.categoriesList[element]} /> 
-               })
-             } */}
-           
-                    {/* //     return <CategoriesCard title={item.title} count={item.count} key={i} /> */}
-      
-               
-                    {/* { 
-                        this.properties = Object.values(this.state.totalCategoria)
-                    }
-                    {console.log(this.properties)} */}
+                }
+            
 
                 </div>
             </React.Fragment>
