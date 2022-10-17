@@ -1,0 +1,12 @@
+.title-productlist{
+    padding: 20px;
+   
+    height: fit-content;
+}
+.productlist-row{
+    margin: auto;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+}

@@ -1,0 +1,39 @@
+.product{
+    width: 100%;
+  
+    padding: 10px;
+}
+.product-content{
+    width:100%;
+}
+.product-card{
+    width: 100%;
+    padding: 15px;
+}
+.product-img{
+    display: flex;
+    justify-content: center;
+}
+.product-name{
+    font-size: 30px;
+    font-weight: 800;
+}
+.product-description{
+    font-size: 28px;
+    font-weight: 400;
+    text-align: justify;
+}
+.product-detail{
+   padding: 15px;
+   display: flex;
+   justify-content: right;
+}
+.product-detail button{
+    border: none;
+    background-color: #2a9593;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}

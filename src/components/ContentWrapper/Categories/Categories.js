@@ -8,13 +8,7 @@ class Categories extends Component {
     constructor() {
         super()
         this.state = {
-            categoriesList: [],
-            //         totalCategoria: {
-            //     'accesories': 46,
-            //     'accesory': 2,
-            //     'casual-clothing': 51,
-            //     'clothing': 3
-            // }
+            categoriesList: []
         }
        
     }
