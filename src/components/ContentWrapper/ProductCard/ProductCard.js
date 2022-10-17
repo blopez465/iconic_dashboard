@@ -9,7 +9,7 @@ function ProductCard(props) {
         <div className="product-card">
          
           <div className="product-img">
-                <img src={props.img}/>
+                <img src={props.img} alt='foto producto'/>
             </div>
             <div className="product-name">
             {props.name}
@@ -17,9 +17,7 @@ function ProductCard(props) {
           <div className="product-description">
             {props.description}
           </div>
-          <div className="product-detail">
-            <button><a href={props.detail}/> DETALLE</button>
-          </div>
+         
         </div>
       </div>
 
